@@ -7,9 +7,9 @@ export function MovieItem({movie}) {
   }`;
 
   return (
-    <div className="movie-list__entry card">
+    <div className="relative">
       <img src={posterPath} alt="" />
-      {movie.title}
+      <p className="absolute inset-x-0 bottom-0 bg-white bg-opacity-95	 px-1 py-0.5">{movie.title}</p>
     </div>
   )
 }

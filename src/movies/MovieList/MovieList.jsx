@@ -1,7 +1,6 @@
 import React from 'react';
 import ky from 'ky';
 import {useQuery} from 'react-query';
-import {Grid, Header, Heading, repeat, View} from '@adobe/react-spectrum';
 import {MovieItem} from '../MovieItem/MovieItem';
 
 async function getMovies() {
@@ -13,20 +12,16 @@ export function MovieList() {
   const { data } = useQuery('movies', getMovies)
 
   return (
-    <div>
-      <Header>
-        <Heading level={1}>Recent Movies</Heading>
-      </Header>
+    <div className="p-1">
+      <header>
+        <h1 className="mb-2 text-3xl">Recent Movies</h1>
+      </header>
       <main>
-        <Grid
-          columns={repeat('auto-fit', 'size-1600')}
-          autoRows="size-1600"
-          justifyContent="center"
-          gap="size-100">
+        <div className="grid grid-flow-row auto-rows-auto grid-cols-4 gap-x-1	gap-y-1.5">
         {data?.results.map(movie => (
           <MovieItem key={movie.id} movie={movie} />
         ))}
-        </Grid>
+        </div>
       </main>
     </div>
   );
