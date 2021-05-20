@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import './styles/index.css'
+import { App } from './app/App'
+
+if (process.env.NODE_ENV === 'development') {
+    const { worker } = await import('./mock-worker')
+    worker.start()
+}
 
 ReactDOM.render(
   <React.StrictMode>
