@@ -1,15 +1,18 @@
 import React from 'react';
 import ky from 'ky';
 import {useQuery} from 'react-query';
-import {MovieItem} from '../MovieItem/MovieItem';
+import {MovieItem} from './MovieItem';
 
 async function getMovies() {
   return ky.get('/movies').json();
 }
 
 export function MovieList() {
-  // We use useQuery for simplicity even though this is paginated data.
-  const { data } = useQuery('movies', getMovies)
+  const { data, isLoading } = useQuery('movies', getMovies)
+
+  if(isLoading) {
+    return <div className="p-1">Loading...</div>
+  }
 
   return (
     <div className="p-1">
@@ -18,7 +21,7 @@ export function MovieList() {
       </header>
       <main>
         <div className="grid grid-flow-row auto-rows-auto grid-cols-4 gap-x-1	gap-y-1.5">
-        {data?.results.map(movie => (
+        {data?.map(movie => (
           <MovieItem key={movie.id} movie={movie} />
         ))}
         </div>

@@ -1,0 +1,848 @@
+{
+  "info": {
+    "adult": false,
+    "backdrop_path": "/6MKr3KgOLmzOP6MSuZERO41Lpkt.jpg",
+    "belongs_to_collection": null,
+    "budget": 200000000,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 80,
+        "name": "Crime"
+      }
+    ],
+    "homepage": "https://movies.disney.com/cruella",
+    "id": 337404,
+    "imdb_id": "tt3228774",
+    "original_language": "en",
+    "original_title": "Cruella",
+    "overview": "In 1970s London amidst the punk rock revolution, a young grifter named Estella is determined to make a name for herself with her designs. She befriends a pair of young thieves who appreciate her appetite for mischief, and together they are able to build a life for themselves on the London streets. One day, Estella\u2019s flair for fashion catches the eye of the Baroness von Hellman, a fashion legend who is devastatingly chic and terrifyingly haute. But their relationship sets in motion a course of events and revelations that will cause Estella to embrace her wicked side and become the raucous, fashionable and revenge-bent Cruella.",
+    "popularity": 6107.84,
+    "poster_path": "/hjS9mH8KvRiGHgjk6VUZH7OT0Ng.jpg",
+    "production_companies": [
+      {
+        "id": 2,
+        "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
+        "name": "Walt Disney Pictures",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "2021-05-26",
+    "revenue": 42600000,
+    "runtime": 134,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "Hello Cruel World",
+    "title": "Cruella",
+    "video": false,
+    "vote_average": 8.8,
+    "vote_count": 1474
+  },
+  "images": [
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/AeNt8dFEpw0b3OTnyszwgCDLnzJ.jpg",
+      "height": 3000,
+      "iso_639_1": "fr",
+      "vote_average": 5.522,
+      "vote_count": 4,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.7069042316258352,
+      "file_path": "/iNdymi9fc7XVoymXhqZYfNKlJvV.jpg",
+      "height": 2245,
+      "iso_639_1": "cs",
+      "vote_average": 5.384,
+      "vote_count": 2,
+      "width": 1587
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/hjS9mH8KvRiGHgjk6VUZH7OT0Ng.jpg",
+      "height": 3000,
+      "iso_639_1": "en",
+      "vote_average": 5.346,
+      "vote_count": 17,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/hUfyYGP9Xf6cHF9y44JXJV3NxZM.jpg",
+      "height": 1500,
+      "iso_639_1": "ru",
+      "vote_average": 5.312,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/y87a7TCp0SIHE2YXfyS0dN8Tghk.jpg",
+      "height": 1500,
+      "iso_639_1": "it",
+      "vote_average": 5.312,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/7A8HeaLk8t2l7aMU3qg7ZHwwz23.jpg",
+      "height": 1500,
+      "iso_639_1": "it",
+      "vote_average": 5.312,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/4CiD9NJQTe9dPTsFb0XfzU6OozY.jpg",
+      "height": 1746,
+      "iso_639_1": "zh",
+      "vote_average": 5.312,
+      "vote_count": 1,
+      "width": 1164
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/mCV4MYtFx8gXwpQ5BI0Eo6YtuH0.jpg",
+      "height": 3000,
+      "iso_639_1": "he",
+      "vote_average": 5.312,
+      "vote_count": 1,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6664,
+      "file_path": "/wToO8opxkGwKgSfJ1JK8tGvkG6U.jpg",
+      "height": 2500,
+      "iso_639_1": "en",
+      "vote_average": 5.276,
+      "vote_count": 12,
+      "width": 1666
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/rJkDiGzHgFNBf8LUHX8IOL0IiVh.jpg",
+      "height": 2295,
+      "iso_639_1": "ko",
+      "vote_average": 5.246,
+      "vote_count": 2,
+      "width": 1530
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/c805OuxH4oMniHRVIvMwy1fvzzw.jpg",
+      "height": 3000,
+      "iso_639_1": "pt",
+      "vote_average": 5.246,
+      "vote_count": 2,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/rRYNGhcAZlTfIUS7iFoF4H9iDbc.jpg",
+      "height": 3000,
+      "iso_639_1": "pt",
+      "vote_average": 5.246,
+      "vote_count": 2,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/qoNlxPn1nZDhp7OsDU4WU0hSA6k.jpg",
+      "height": 2250,
+      "iso_639_1": "pt",
+      "vote_average": 5.246,
+      "vote_count": 2,
+      "width": 1500
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/ljPHd7WiPVKmuXi1hgQUpZQslbC.jpg",
+      "height": 1100,
+      "iso_639_1": "pt",
+      "vote_average": 5.246,
+      "vote_count": 2,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/A0knvX7rlwTyZSKj8H5NiARb45.jpg",
+      "height": 1500,
+      "iso_639_1": "en",
+      "vote_average": 5.232,
+      "vote_count": 17,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/rTh4K5uw9HypmpGslcKd4QfHl93.jpg",
+      "height": 3000,
+      "iso_639_1": "en",
+      "vote_average": 5.198,
+      "vote_count": 7,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6668,
+      "file_path": "/4a5IF9QdgAvEYoK2qHowooixtOQ.jpg",
+      "height": 2500,
+      "iso_639_1": "en",
+      "vote_average": 5.198,
+      "vote_count": 7,
+      "width": 1667
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/pKAxHs04yxLDQSIf4MNiZoePVWX.jpg",
+      "height": 1500,
+      "iso_639_1": "en",
+      "vote_average": 5.19,
+      "vote_count": 5,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/qRHphMIGRVQmdCVKnEdjwFyuk9V.jpg",
+      "height": 1500,
+      "iso_639_1": "en",
+      "vote_average": 5.19,
+      "vote_count": 5,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.68,
+      "file_path": "/WvpSHvlEWGKYfLT2KsZUiBHcN2.jpg",
+      "height": 1000,
+      "iso_639_1": "en",
+      "vote_average": 5.18,
+      "vote_count": 3,
+      "width": 680
+    },
+    {
+      "aspect_ratio": 0.6662958843159066,
+      "file_path": "/lfaVyTwml4DmoJuAWisbKrUtTUe.jpg",
+      "height": 1798,
+      "iso_639_1": "ru",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 1198
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/ohYlHBRntmtGkjB3ghE8W4A7Ydf.jpg",
+      "height": 1426,
+      "iso_639_1": "en",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/w0CKUtkxnejV2JlQNwWkfI5XpqH.jpg",
+      "height": 1426,
+      "iso_639_1": "en",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/qCESRbuBofFpbMvHOpQgV17iFkQ.jpg",
+      "height": 1426,
+      "iso_639_1": "en",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/slKkvUF2HqGyYRR4IZVsSLrAVEz.jpg",
+      "height": 1426,
+      "iso_639_1": "en",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/rJGBqSfwxnr67pDSf363O9rv28O.jpg",
+      "height": 3000,
+      "iso_639_1": "en",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.75,
+      "file_path": "/ksu7rmfvOyPQ4OCDoOmFSwiNqJD.jpg",
+      "height": 1200,
+      "iso_639_1": "it",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 900
+    },
+    {
+      "aspect_ratio": 0.6672727272727272,
+      "file_path": "/68qnOUxMHgufYKIhSDNOhPvo4ep.jpg",
+      "height": 1100,
+      "iso_639_1": "fr",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 734
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/zSTkgcbXSulGVVqCoypNL5Q8y3g.jpg",
+      "height": 1100,
+      "iso_639_1": "it",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.6665555185061687,
+      "file_path": "/5bsApWAUqb0jeXtHPjKQ6MZOtZJ.jpg",
+      "height": 2999,
+      "iso_639_1": "es",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 1999
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/2ymRlhPrIfwwfAUyAXCtLXfk9Cm.jpg",
+      "height": 1100,
+      "iso_639_1": "cs",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/cr8NqKmGZXXJoTY0eBZDNNIjtK7.jpg",
+      "height": 1100,
+      "iso_639_1": "fr",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/5fd52pZ07Lzx4w4O4ophFXoWojr.jpg",
+      "height": 3000,
+      "iso_639_1": "it",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/bqIFNIas88QNaXznuRo4dyT3an7.jpg",
+      "height": 1500,
+      "iso_639_1": "it",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6663636363636364,
+      "file_path": "/fgH6Am2aS7idzaR2A4Q9yuO4ahI.jpg",
+      "height": 1100,
+      "iso_639_1": "ko",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 733
+    },
+    {
+      "aspect_ratio": 0.7001953125,
+      "file_path": "/tswdbev05xCtNSKEhm85uGbkHq2.jpg",
+      "height": 1024,
+      "iso_639_1": "pt",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 717
+    },
+    {
+      "aspect_ratio": 0.6663636363636364,
+      "file_path": "/v5ppm66SdW8fAjRHa1i5w9XvLNk.jpg",
+      "height": 1100,
+      "iso_639_1": "it",
+      "vote_average": 5.172,
+      "vote_count": 1,
+      "width": 733
+    },
+    {
+      "aspect_ratio": 0.6668889629876625,
+      "file_path": "/jElFaoymqq9ktj3vkND3QcbEHy4.jpg",
+      "height": 2999,
+      "iso_639_1": "en",
+      "vote_average": 5.128,
+      "vote_count": 6,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/eZGTHXup6fB5gjQgak7SLJfo01p.jpg",
+      "height": 2400,
+      "iso_639_1": "en",
+      "vote_average": 5.118,
+      "vote_count": 4,
+      "width": 1600
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/pbKlrBNOjPWVPaSYngA3fVyd3aq.jpg",
+      "height": 750,
+      "iso_639_1": "en",
+      "vote_average": 5.106,
+      "vote_count": 2,
+      "width": 500
+    },
+    {
+      "aspect_ratio": 0.6672727272727272,
+      "file_path": "/67H85SKcCOISSxvoYafj5uSS1ef.jpg",
+      "height": 1100,
+      "iso_639_1": "ko",
+      "vote_average": 5.106,
+      "vote_count": 2,
+      "width": 734
+    },
+    {
+      "aspect_ratio": 0.6668,
+      "file_path": "/fUadggDVwdTcfxIW5vbN9w6FTa6.jpg",
+      "height": 2500,
+      "iso_639_1": "en",
+      "vote_average": 5.068,
+      "vote_count": 7,
+      "width": 1667
+    },
+    {
+      "aspect_ratio": 0.6668889629876625,
+      "file_path": "/2AotynzNxo7hLnXnQjzqaOQZxOP.jpg",
+      "height": 2999,
+      "iso_639_1": "en",
+      "vote_average": 5.068,
+      "vote_count": 7,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/jhqyGm5tlbFo4GJmodQP1aHkxzy.jpg",
+      "height": 750,
+      "iso_639_1": "en",
+      "vote_average": 5.056,
+      "vote_count": 5,
+      "width": 500
+    },
+    {
+      "aspect_ratio": 0.6752,
+      "file_path": "/w5E3FcbEBgN62siKDu77tCdBEGb.jpg",
+      "height": 2500,
+      "iso_639_1": "en",
+      "vote_average": 5.044,
+      "vote_count": 3,
+      "width": 1688
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/reiozSJUyc7BmkssiiRI4SUXfO3.jpg",
+      "height": 3000,
+      "iso_639_1": "de",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/ozVtzWd6pze2KYmxIYVjKqC8WM.jpg",
+      "height": 1500,
+      "iso_639_1": "it",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6663581675150393,
+      "file_path": "/llMHmatwHFewe5DFGGBbDgfmcta.jpg",
+      "height": 2161,
+      "iso_639_1": "sv",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1440
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/mxftBfq5SXWdaybQZHmtn2FrinU.jpg",
+      "height": 1800,
+      "iso_639_1": "uk",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1200
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/m3tCmOazM3aqdsxFEQ1KQudouos.jpg",
+      "height": 1500,
+      "iso_639_1": "ru",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/AotHpWOnLD8vpucgj2Xw95id9e3.jpg",
+      "height": 1500,
+      "iso_639_1": "en",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/wK9Kd0vyuqgt41AF8CMzMBAw9KJ.jpg",
+      "height": 1426,
+      "iso_639_1": null,
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/gy8CtuQWkln8B0O5QE1CK5B8F3w.jpg",
+      "height": 1426,
+      "iso_639_1": null,
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/mqR7woRjJ2CstMNL80Zsu0zu504.jpg",
+      "height": 1426,
+      "iso_639_1": null,
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7012622720897616,
+      "file_path": "/dPSffoWzAqYcPbSgbEJyWsgt48M.jpg",
+      "height": 1426,
+      "iso_639_1": null,
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/sWSMGEUKpXK40MpdKhBeoFS3sFw.jpg",
+      "height": 3000,
+      "iso_639_1": "el",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/nakcwl9yFmfzycNRAYt8awURV9q.jpg",
+      "height": 1500,
+      "iso_639_1": "cn",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7017543859649122,
+      "file_path": "/ejnSfKiUgqyiqdiLMc1wGAwvyTN.jpg",
+      "height": 2850,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/f0u78WxaIud2lnvR59KheEowFrP.jpg",
+      "height": 960,
+      "iso_639_1": "ru",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 640
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/lEZYNf8PxMjKX84ktdYsdQQEb5q.jpg",
+      "height": 2100,
+      "iso_639_1": "hu",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1400
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/xvlUkpbFKmjxMkPoUnSqVAqVcyO.jpg",
+      "height": 3000,
+      "iso_639_1": "pl",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.7079646017699115,
+      "file_path": "/qnO8ZWnV0PDl88l8jnpDTKyjY9L.jpg",
+      "height": 1130,
+      "iso_639_1": "ja",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 800
+    },
+    {
+      "aspect_ratio": 0.7063636363636364,
+      "file_path": "/fRWqc43UkFa0fJdBO0bkmgQn0vB.jpg",
+      "height": 1100,
+      "iso_639_1": "ja",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 777
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/96fwZkHfgsh65WtKVqT9aWdsqKC.jpg",
+      "height": 1100,
+      "iso_639_1": "ja",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/1Wtdb5plM43JyFJNCRjkcyI1AzV.jpg",
+      "height": 1100,
+      "iso_639_1": "zh",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/gEAfDvhnVY8d7Zo5MZS3HPr8YYc.jpg",
+      "height": 1100,
+      "iso_639_1": "cn",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/bqvD5rXvYaHCrClHXcL3ebXN60a.jpg",
+      "height": 1100,
+      "iso_639_1": "cn",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.7065,
+      "file_path": "/2UVbciiOu8xvLuY84PMA6an1B6t.jpg",
+      "height": 2000,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1413
+    },
+    {
+      "aspect_ratio": 0.70703125,
+      "file_path": "/eYgXjd4Cl8NoQUhJOY1OJwdXtWZ.jpg",
+      "height": 2048,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1448
+    },
+    {
+      "aspect_ratio": 0.7069635913750442,
+      "file_path": "/b8zOTYufAmfna3WT0GvbIiO1ev3.jpg",
+      "height": 2829,
+      "iso_639_1": "ja",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.7018992568125516,
+      "file_path": "/yKVHTFsV3kBbs4I1gLXVhxiP1zD.jpg",
+      "height": 1211,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 850
+    },
+    {
+      "aspect_ratio": 0.7018992568125516,
+      "file_path": "/6TtRbkKz6a687VDXUDJsMwLLr9v.jpg",
+      "height": 1211,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 850
+    },
+    {
+      "aspect_ratio": 0.7018992568125516,
+      "file_path": "/7DLPEyoPryL4dGuG8yuxmlMkKlj.jpg",
+      "height": 1211,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 850
+    },
+    {
+      "aspect_ratio": 0.7018992568125516,
+      "file_path": "/9mwUIp0jiHM7Cx9OAZYMg8EDY3b.jpg",
+      "height": 1211,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 850
+    },
+    {
+      "aspect_ratio": 0.7018992568125516,
+      "file_path": "/bnKG2FC6ZqU0CNffIk2x1qx2WPx.jpg",
+      "height": 1211,
+      "iso_639_1": "ko",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 850
+    },
+    {
+      "aspect_ratio": 0.6672727272727272,
+      "file_path": "/jD2CtJ3xITaoOCTyvtRGN4Y72Zc.jpg",
+      "height": 1100,
+      "iso_639_1": "fr",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 734
+    },
+    {
+      "aspect_ratio": 0.6672727272727272,
+      "file_path": "/g7BB5eAIQkBmfldTOu6ay20AG82.jpg",
+      "height": 1100,
+      "iso_639_1": "fr",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 734
+    },
+    {
+      "aspect_ratio": 0.6672727272727272,
+      "file_path": "/nyL42dpE927PTDLTVxZWlkshurX.jpg",
+      "height": 1100,
+      "iso_639_1": "fr",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 734
+    },
+    {
+      "aspect_ratio": 0.6672727272727272,
+      "file_path": "/aE1mWwmCrZ3Z6l8tSk5pzJVzp77.jpg",
+      "height": 1100,
+      "iso_639_1": "fr",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 734
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/reQvR7QVJSXUG3rQlbftRk0oCp.jpg",
+      "height": 1500,
+      "iso_639_1": "th",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1000
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/sdcMDlrh0TWPY04fLTtKXnM9lmj.jpg",
+      "height": 1100,
+      "iso_639_1": "vi",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.7,
+      "file_path": "/kME6bFCu25A3ykLcsVLNfVDUJhH.jpg",
+      "height": 1100,
+      "iso_639_1": "zh",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 770
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/krezNhuvcuFqfIhV40UJ0Xmb6q4.jpg",
+      "height": 3000,
+      "iso_639_1": "he",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 2000
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/yClqDq57RA07geFaSMAL7rl6w7O.jpg",
+      "height": 2250,
+      "iso_639_1": "he",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 1500
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/nuBzkLid7XWa4feBZv75c7bHJ43.jpg",
+      "height": 750,
+      "iso_639_1": "ru",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 500
+    },
+    {
+      "aspect_ratio": 0.6666666666666666,
+      "file_path": "/1AZeUbutbivet3bXi2I2TT0Q2E5.jpg",
+      "height": 1155,
+      "iso_639_1": "fr",
+      "vote_average": 0.0,
+      "vote_count": 0,
+      "width": 770
+    }
+  ],
+  "reviews": [
+    {
+      "author": "msbreviews",
+      "author_details": {
+        "name": "",
+        "username": "msbreviews",
+        "avatar_path": "/https://secure.gravatar.com/avatar/992eef352126a53d7e141bf9e8707576.jpg",
+        "rating": 8.0
+      },
+      "content": "If you enjoy reading my Spoiler-Free reviews, please follow my blog @\r\nhttps://www.msbreviews.com\r\n\r\nThe 101 Dalmatians franchise is one of those Disney properties that is always broadcasted across all main television networks during holidays in my country, usually during Christmas. The live-action films of 1996 and 2000 are stored somewhere in my memory, even though I never really sat down and watched the movies all by myself. Cruella might just be another live-action film from the Mickey Mouse studio, but it's far from being yet another remake, much on the contrary. Just like the vast majority of the company's villains, Cruella de Vil (portrayed by Glenn Close in the previous installments) was even worse than the generic antagonist with cliche motivations that eventually every studio used and reused to exhaustion.\r\n\r\nBesides Cruella's greedy necessities, purely evil personality, and extreme vanity, this wicked character was driven by something completely unthinkable: skinning short-haired puppies to have more success in the fashion industry due to their soft fur. Anyone with a conscience knows that Disney would never bring this character back to the big screen in 2021 without making some changes, especially regarding this motivation in particular. How would a movie with a dog-killing protagonist at its front and center be remotely successful? Obviously, this hardcore motif no longer belongs to Emma Stone's Cruella's defining character traits, which might be a no-no for those viewers who are more protective of the original material, as if times and culture didn't change from decade to decade.\r\n\r\nSince the start of Disney's live-action remakes campaign, audiences have been divided about how to feel and what to expect from these films. Some wish for a copy-paste version of the same story, while others desire a completely different take on the well-known narrative. However, the best experience - and the primary goal of these movies - is a mix of both: a version that keeps the essence and the message of the original while bringing something new and different to the table to justify its existence. Cruella isn't a remake but an origin(al) story based on a classic villain... And it's undoubtedly one of the best films I've seen this year until this day! I didn't expect to write an extensive review, but with so much to address, I know my thoughts will take a while to transcribe to this article.\r\n\r\nLet me start with some easy elements that everyone can see and enjoy without having to go into \"deep analysis mode\". The costume design is indisputably the technical standout. The colorfully stunning dresses steal the show visually, but it's how it differentiates Estella and Cruella that Jenny Beavan shines in her job. Just from what Stone wears, the viewers can easily decipher what character she's playing. The differences between the glamorous, rich people that the Baroness surrounds herself with and the dirty, poor friends Estella meets at the beginning of the movie - Jasper (Joel Fry) and Horace (Paul Walter Hauser) - is also accentuated through their wardrobes.\r\n\r\nThe extravagant parties are packed with Oscar-worthy costumes, but also with beautiful makeup & hair (Nadia Stacey) and absolutely ravishing production design (Fiona Crombie). Nicholas Britell's score carries little references to the music of the other installments, as does the film itself. Craig Gillespie doesn't hide the Easter Eggs spread throughout the runtime, of which some will definitely please the most avid fans. Technically, it's as gorgeous as one came to expect from the studio, but not everything is as impressive as the aspects above. In a movie where even the black-and-white hair and clothes of Cruella pop off the screen, the CGI backgrounds and animals are way too noticeable for the studio that just made a hyper-realistic remake of The Lion King.\r\n\r\nCGI dogs are employed during most of the runtime, which is not only understandable but also commendable. Animal violence in filmmaking is a serious topic that fortunately was solved long ago. However, the VFX don't look good enough, causing the dogs - mainly the Dalmatians - to be an unintended distraction. In addition to this, a specific outdoor location that's quite important to the story is surrounded by an awfully dark, fake background that just feels way too off. Finally, the ending boasts a ridiculous sequence made with terrible CGI that will definitely leave the more \"logic-driven\" viewers stunned with disappointment. I consider this a nitpick, especially since it's not a film without silliness.\r\n\r\nIn fact, Cruella's success partially rests on Gillespie's tone balance. Jasper and Horace become the comic-relief characters, starring in the absurd action sequences that occur at parties and other places they decide to steal from. Now, some people might expect that since the other movies are defined by their irrational fun. However, Dana Fox and Tony McNamara's screenplay carries undeniable similarities to The Devil Wears Prada and the most recent Joker. Estella's life story is far from being a happy tale, and Cruella's rise even less. Overall, the balance between the silly comedy and the more dramatic, depressing, traumatic storyline is mostly well-handled, but there are a few moments where Gillespie lets it too loose, especially in the over-Disney-ish last fifteen minutes.\r\n\r\nSo, let's address the two protagonists: Estella and Cruella. The comparisons with Joaquin Phoenix's take on Arthur Fleck / Joker are impossible to unsee. From the upbringing filled with bullying and family tragedy to the final transformation, Emma Stone's character follows a similar arc, but with clear differences concerning the solution for her problems. Estella dreams of being a fashion designer and idolizes the self-centered, self-indulgent Baroness, which takes her down a learning path of how to be successful in the business. The Baroness' despicable treatment of Estella brings the ruthless Cruella gradually back to life, eventually stealing the spotlight from the lovely little Estella who just wanted to do what she loved for a living... without having to carry on extreme measures.\r\n\r\nAn unexpected, clever twist pretty much completes the protagonist's transformation, which genuinely caught me by surprise. I admit that I didn't have high hopes for this origin story. Nevertheless, the well-written screenplay deeply explores a previously hollow villain, offering her a touching backstory and comprehensible motivations. While it's true that she possesses dozens of identical characteristics to the infamous Baroness, Cruella never truly becomes 100% that person. Honestly, I wouldn't mind seeing a sequel, but I don't think there's room for another film that wouldn't hurt the one we just got. So, there's just one more aspect to delve into: the cast's performances.\r\n\r\nJoel Fry and Paul Walter Hauser are truly hilarious as the famous duo of thieves. Both share a compelling connection to Estella, one that I believe deserved a better conclusion. They become a family, living and stealing throughout their lives, but when Estella starts giving Cruella some screentime, a few issues arise within the trio. These problems are indeed approached and solved, but in a less dramatic manner than I hoped for. Fry is excellent as the more competent, rational Jasper, but Hauser never stops being extremely funny. The before-mentioned balance is rarely affected by the characters' comedic banter, which is something the actors also deserve credit for.\r\n\r\nEmma Thompson delivers one of my favorite performances of her recent filmography, interpreting the Baroness von Hellman. How can you make an extremely over-the-top character feel cartoonish yet strangely real? Someone who clearly feels like an exaggeration of a stereotype but still resembles dozens of people from the real world? Thompson takes her role, and the only reason why she doesn't steal the spotlight from everyone else is because the other Emma rises to the challenge of portraying such a classic villain. With obvious references to Miranda Priestly from The Devil Wears Prada, Thompson is able to be amusing and vile in the same scene, making every second with her on screen feel incredibly captivating.\r\n\r\nNevertheless, Emma Stone manages to stay a level above everyone else. I firmly believe that she's one of the best actresses of her generation. Carrying one of the most expressive faces in Hollywood, Stone was born to play a protagonist with two personalities. Without looking at the screen, any viewer will be able to know if she's talking as Estella or Cruella. Not only she changes the tone of her voice depending on the character, but the mannerisms alter as well. It would be a massive surprise if such an early Disney performance got an Oscar nomination, so her chances are obviously thin. However, if there was an award for Best Monologue, Stone would be a strong contender.\r\n\r\nI don't recall how many minutes it really is, but I can't forget that long, uncut take with Stone at the center of the screen with nothing but her acting the hell out of an emotionally impactful monologue. Switching between Estella and Cruella in the span of milliseconds, her micro-expressions elevate a heartfelt, character-defining speech that will undoubtedly mark this year of cinema. Stone gives not one but two impressive, attention-grabbing performances that will satisfy most viewers looking for a Cruella they can understand and even root for.\r\n\r\nCruella is not only one of 2021's biggest surprises, but it's also one of the best movies of the year so far. Despite the occasional lack of balance between the silly comedy and the dramatic narrative, Craig Gillespie offers an incredibly captivating origin(al) story about one of Disney's classic villains. Dana Fox and Tony McNamara's remarkable screenplay profoundly explores the Estella-Cruella transformation, giving her non-dog-killing, emotionally compelling motivations, a traumatic, depressing past, and an unexpected twist that will probably catch most viewers off-guard. With one of her best performances ever, Emma Stone delivers an award-worthy display, interpreting two personalities in impressive fashion, stealing the spotlight from the other outstanding interpretations. Technically, the distracting CGI in animals and some noticeable green-screen don't overcome the predictably Oscar-winning, stunning costume design, as well as the gorgeous makeup & hair, wonderful production design, and sweet score packed with excellent song choices. A character study that makes this one of Disney's best live-action films in the last couple of decades.\r\n\r\nRating: A-",
+      "created_at": "2021-05-26T15:07:13.281Z",
+      "id": "60ae64210f2ae10057563b35",
+      "updated_at": "2021-05-26T15:07:13.281Z",
+      "url": "https://www.themoviedb.org/review/60ae64210f2ae10057563b35"
+    }
+  ]
+}

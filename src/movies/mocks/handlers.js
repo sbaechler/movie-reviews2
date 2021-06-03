@@ -1,6 +1,6 @@
 import { rest } from 'msw'
 import movies from './movies.json';
-import starWars from './star-wars.json';
+import movie from './cruella.json';
 
 export const handlers = [
     rest.get('/movies', (req, res, ctx) => {
@@ -9,6 +9,6 @@ export const handlers = [
         )
     }),
     rest.get('/movies/:id', (req, res, ctx) => {
-        return res(ctx.json(starWars))
+        return res(ctx.json(movie))
     })
 ]
