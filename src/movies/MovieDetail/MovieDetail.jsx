@@ -3,6 +3,7 @@ import ky from 'ky';
 import { useParams, Link } from 'react-router-dom';
 import {IMAGE_BASE_URL} from '../../constants';
 import {useQuery} from 'react-query';
+import {MovieReviews} from '../MovieReviews';
 
 async function getMovie(id) {
   return ky.get(`/movies/${id}`).json();
@@ -45,6 +46,9 @@ export function MovieDetail() {
         </div>
         <p>{info.overview}</p>
       </div>
+
+      <MovieReviews reviews={movie.reviews} movieId={id} />
+
       <div className="py-8">
         <h2 className="text-2xl mb-3 text-blueGray-800">Images</h2>
         <ul className="flex flex-wrap -mx-4 -mb-8">
@@ -58,7 +62,6 @@ export function MovieDetail() {
             ))}
         </ul>
       </div>
-      {/*<MovieReviews reviews={props.movie.reviews} movieId={movieInfo.id} />*/}
     </div>
   );
 }

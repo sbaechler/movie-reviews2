@@ -1,11 +1,7 @@
 import React from 'react';
-import ky from 'ky';
 import {useQuery} from 'react-query';
 import {MovieItem} from './MovieItem';
-
-async function getMovies() {
-  return ky.get('/movies').json();
-}
+import {getMovies} from '../../api/movies';
 
 export function MovieList() {
   const { data, isLoading } = useQuery('movies', getMovies)
