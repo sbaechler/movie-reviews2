@@ -8,7 +8,7 @@ export function MovieReviews({ reviews, movieId }) {
       : "just now";
 
     return (
-      <li key={review.id}>
+      <li key={review.id} className="mb-3 w-9/12">
         <h4>
           {review.author} <small>{dateString}</small>
         </h4>
@@ -18,9 +18,10 @@ export function MovieReviews({ reviews, movieId }) {
   });
 
   return (
-    <div className="reviews">
-      <ul className="reviews__list no-bullet">{reviewList}</ul>
-      <AddReview movieId={movieId} />
+    <div className="my-1 mb-3">
+      <h2 className="text-2xl mb-2 text-blueGray-800">Reviews</h2>
+      <ul className="">{reviewList}</ul>
+      <AddReview movieId={movieId} author="Anonymous" />
     </div>
   );
 }

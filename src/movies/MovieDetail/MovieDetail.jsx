@@ -1,13 +1,9 @@
 import React from 'react';
-import ky from 'ky';
 import { useParams, Link } from 'react-router-dom';
-import {IMAGE_BASE_URL} from '../../constants';
 import {useQuery} from 'react-query';
+import { getMovie } from '../../api/movies';
+import {IMAGE_BASE_URL} from '../../constants';
 import {MovieReviews} from '../MovieReviews';
-
-async function getMovie(id) {
-  return ky.get(`/movies/${id}`).json();
-}
 
 export function MovieDetail() {
   const {id} = useParams();
@@ -29,9 +25,9 @@ export function MovieDetail() {
   ));
 
   return (
-    <div className="mx-3 my-1">
+    <div className="mx-3">
       <Link to="/" className="text-indigo-500 font-bold uppercase py-2 text-sm outline-none mr-1 mb-1">&lt; Back to List</Link>
-      <div>
+      <div className="mb-6">
         <h1 className="text-4xl font-normal leading-normal mt-0 mb-2 text-blueGray-800">
           {info.title}
           <br />
