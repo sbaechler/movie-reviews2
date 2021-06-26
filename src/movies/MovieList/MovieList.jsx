@@ -3,6 +3,10 @@ import {useQuery} from 'react-query';
 import {MovieItem} from './MovieItem';
 import {getMovies} from '../../api/movies';
 
+/**
+ * This component shows a list of all movies. It is also
+ * responsible for fetching the data from the API.
+ */
 export function MovieList() {
   const { data, isLoading } = useQuery('movies', getMovies)
 

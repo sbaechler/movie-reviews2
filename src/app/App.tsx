@@ -12,8 +12,8 @@ export function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Switch>
-          <Route path="/movies/:id" component={MovieDetail} />
-          <Route path="/" component={MovieList}/>
+          <Route path="/movies/:id"><MovieDetail /></Route>
+          <Route path="/"><MovieList /></Route>
         </Switch>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} />

@@ -3,8 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import {useQuery} from 'react-query';
 import { getMovie } from '../../api/movies';
 import {IMAGE_BASE_URL} from '../../constants';
-import {MovieReviews} from '../MovieReviews';
+import {MovieReviews} from '../MovieReviews/MovieReviews';
 
+/**
+ * The detail view for a single movie.
+ * The id is taken from the URL params.
+ */
 export function MovieDetail() {
   const {id} = useParams();
 
@@ -16,7 +20,8 @@ export function MovieDetail() {
     return (<div>ERROR loading the movie</div>)
   }
 
-  const { info, images, reivews } = movie;
+  const { info, images, reviews } = movie;
+  const imgSrc = `${IMAGE_BASE_URL}w342${info.poster_path}`
 
   const genres = info.genres.map(genre => (
     <span className="genre label" key={genre.id}>
@@ -36,14 +41,14 @@ export function MovieDetail() {
         <p>{genres}</p>
         <div className="flex flex-wrap justify-center">
           <div className="w-9/12 sm:w-6/12 p-4 text-center">
-            <img src={`${IMAGE_BASE_URL}w342${info.poster_path}`} alt="Poster"
+            <img src={imgSrc} alt="Poster"
                  className="shadow-lg inline rounded max-w-full h-auto align-middle border-none"/>
           </div>
         </div>
         <p>{info.overview}</p>
       </div>
 
-      <MovieReviews reviews={movie.reviews} movieId={id} />
+      <MovieReviews reviews={reviews} movieId={id} />
 
       <div className="py-8">
         <h2 className="text-2xl mb-3 text-blueGray-800">Images</h2>

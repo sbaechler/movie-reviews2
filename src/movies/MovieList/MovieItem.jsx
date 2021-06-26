@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { IMAGE_BASE_URL } from "../../constants";
 
+/**
+ * A single item of the movie list.
+ * Contains an image and the title as well as a link to the detail page.
+ */
 export function MovieItem({movie}) {
   const posterPath = `${IMAGE_BASE_URL}/w342/${movie.poster_path}`;
 
