@@ -17,7 +17,6 @@ export function App() {
         </Switch>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} />
-      <TmdbAttribution />
     </QueryClientProvider>
   );
 }
