@@ -1,5 +1,4 @@
 import React from 'react';
-import { AddReview } from "./AddReview";
 
 export function MovieReviews({ reviews, movieId }) {
   const reviewList = reviews.map(review => {
@@ -21,7 +20,6 @@ export function MovieReviews({ reviews, movieId }) {
     <div className="my-1 mb-3">
       <h2 className="text-2xl mb-2 text-blueGray-800">Reviews</h2>
       <ul className="">{reviewList}</ul>
-      <AddReview movieId={movieId} author="Anonymous" />
     </div>
   );
 }
