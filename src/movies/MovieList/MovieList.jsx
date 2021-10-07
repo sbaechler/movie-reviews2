@@ -1,14 +1,11 @@
 import React from 'react';
-import {useQuery} from 'react-query';
-import {MovieItem} from './MovieItem';
-import {getMovies} from '../../api/movies';
 
 /**
  * This component shows a list of all movies. It is also
  * responsible for fetching the data from the API.
  */
 export function MovieList() {
-  const { data, isLoading } = useQuery('movies', getMovies)
+  const isLoading = false;  // TODO: Remove
 
   if(isLoading) {
     return <div className="p-1">Loading...</div>
@@ -21,9 +18,7 @@ export function MovieList() {
       </header>
       <main>
         <div className="grid grid-flow-row auto-rows-auto grid-cols-4 gap-x-1	gap-y-1.5">
-        {data?.map(movie => (
-          <MovieItem key={movie.id} movie={movie} />
-        ))}
+        Add Movies here
         </div>
       </main>
     </div>
