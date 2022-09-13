@@ -8,7 +8,7 @@ import {getMovies} from '../../api/movies';
  * responsible for fetching the data from the API.
  */
 export function MovieList() {
-  const { data, isLoading } = useQuery('movies', getMovies)
+  const { data, isLoading } = useQuery(['movies'], getMovies)
 
   if(isLoading) {
     return <div className="p-1">Loading...</div>
