@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import {useQuery} from 'react-query';
+import {useQuery} from '@tanstack/react-query';
 import { getMovie } from '../../api/movies';
 import {IMAGE_BASE_URL} from '../../constants';
 import {MovieReviews} from '../MovieReviews/MovieReviews';
