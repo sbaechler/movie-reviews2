@@ -1,5 +1,5 @@
 import React from 'react';
-import {useQuery} from 'react-query';
+import {useQuery} from '@tanstack/react-query';
 import {MovieItem} from './MovieItem';
 import {getMovies} from '../../api/movies';
 
@@ -8,7 +8,7 @@ import {getMovies} from '../../api/movies';
  * responsible for fetching the data from the API.
  */
 export function MovieList() {
-  const { data, isLoading } = useQuery('movies', getMovies)
+  const { data, isLoading } = useQuery(['movies'], getMovies)
 
   if(isLoading) {
     return <div className="p-1">Loading...</div>
