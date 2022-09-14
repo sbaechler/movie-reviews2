@@ -13,5 +13,6 @@ export const handlers = [
   }),
   rest.post('/reviews/:id', (req, res, ctx) => {
     return res(ctx.text('OK'))
-  })
+  }),
+  rest.get('https://image.tmdb.org/*', () => null),
 ]
