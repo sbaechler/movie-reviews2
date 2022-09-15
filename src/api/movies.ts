@@ -4,6 +4,7 @@ import ky from 'ky';
  * Fetches the movies list from the endpoint.
  */
 export async function getMovies() {
+  console.log('get movies')
     return ky.get('/movies').json();
 }
 
