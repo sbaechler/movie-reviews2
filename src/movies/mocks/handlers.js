@@ -1,18 +1,26 @@
 import {rest} from 'msw'
-import movies from './movies.json';
-import movie from './cruella.json';
+
+const details = {}
 
 export const handlers = [
-  rest.get('/movies', (req, res, ctx) => {
+  rest.get('/movies', async (req, res, ctx) => {
+    const data = await import('./data/movies/GET.json')
+
     return res(
-      ctx.json(movies),
+      ctx.json(data.results),
     )
   }),
-  rest.get('/movies/:id', (req, res, ctx) => {
-    return res(ctx.json(movie))
+  rest.get('/movies/:id', async (req, res, ctx) => {
+    if (!details[req.params.id]) {
+      details[req.params.id] = await import(`./data/movies/${req.params.id}/GET.json`);
+    }
+
+    return res(ctx.json(details[req.params.id]))
   }),
   rest.post('/reviews/:id', (req, res, ctx) => {
-    return res(ctx.text('OK'))
+    details[req.params.id].reviews?.unshift(req.json())
+
+    return res(ctx.json(details[req.params.id]))
   }),
   rest.get('https://image.tmdb.org/*', () => null),
 ]
