@@ -2,8 +2,8 @@ import React from 'react';
 
 export function MovieReviews({ reviews, movieId }) {
   const reviewList = reviews.map(review => {
-    const dateString = review.publication_date
-      ? new Date(review.publication_date).toLocaleDateString()
+    const dateString = review.updated_at
+      ? new Date(review.updated_at).toLocaleDateString()
       : "just now";
 
     return (
