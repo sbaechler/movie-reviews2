@@ -4,24 +4,24 @@ import {submitMovieReview} from '../../api/movies';
 
 export function AddReview({ movieId, author }) {
   const [content, setContent] = useState('');
-  const queryClient = useQueryClient()
+  const queryClient = useQueryClient();
 
   const mutation = useMutation(() => {
-    const now = new Date();
     submitMovieReview({
       movieId,
       content,
       author,
-      publication_date: now,
     })
   }, {
-    onSuccess: () => setContent('')
+    onSuccess: () => {
+      queryClient.invalidateQueries(['movies', movieId]);
+      setContent('');
+    }
   })
 
   const onSubmit = (e) => {
     e.preventDefault()
-    mutation.mutate({})
-    queryClient.invalidateQueries(['movies', movieId])
+    mutation.mutate()
   }
 
   return (

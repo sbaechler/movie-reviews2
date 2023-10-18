@@ -1,23 +1,22 @@
 import React, { Suspense } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes} from 'react-router-dom'
 import { MovieDetail, MovieList } from '../movies';
 import { TmdbAttribution } from '../movies/TmdbAttribution'
 
 const queryClient = new QueryClient()
 
 export function App() {
+  const router = createBrowserRouter([
+    { path: '/', element: <MovieList /> },
+    { path: '/movies/:id', element: <MovieDetail /> }
+  ])
+
+
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Suspense fallback="loading...">
-          <Routes>
-            <Route path="/" element={<MovieList />} />
-            <Route path="/movies/:id" element={<MovieDetail />}/>
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
+      <RouterProvider router={router} />
       <ReactQueryDevtools initialIsOpen={false} />
       <TmdbAttribution />
     </QueryClientProvider>
