@@ -7,8 +7,8 @@ import React from 'react';
 export function MovieList() {
   const isLoading = false;  // TODO: Remove
 
-  if(isLoading) {
-    return <div className="p-1">Loading...</div>
+  if (isLoading) {
+    return <div className="p-1">Loading...</div>;
   }
 
   return (
