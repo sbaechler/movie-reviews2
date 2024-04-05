@@ -1,10 +1,10 @@
-import ky from 'ky';
+import ky from "ky";
 
 /**
  * Fetches the movies list from the endpoint.
  */
 export async function getMovies() {
-    return ky.get('/movies').json();
+  return ky.get(`${window.location.origin}/movies`).json();
 }
 
 /**
@@ -12,21 +12,21 @@ export async function getMovies() {
  * @param id - The ID of the movie.
  */
 export async function getMovie(id: string) {
-  return ky.get(`/movies/${id}`).json();
+  return ky.get(`${window.location.origin}/movies/${id}`).json();
 }
 
 type MoviePayload = {
-  movieId: string,
-  content: string,
-  author: string,
-}
+  movieId: string;
+  content: string;
+  author: string;
+};
 
 /**
  * Post a review to the backend.
  * @param payload{MoviePayload} - A review object.
  */
 export async function submitMovieReview(payload: MoviePayload) {
-  return ky.post(`/reviews/${payload.movieId}`, {
-    body: JSON.stringify(payload)
-  })
+  return ky.post(`${window.location.origin}/reviews/${payload.movieId}`, {
+    body: JSON.stringify(payload),
+  });
 }
