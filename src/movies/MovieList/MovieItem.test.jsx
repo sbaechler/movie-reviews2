@@ -36,8 +36,4 @@ describe('MovieItem', () => {
 
     expect(screen.getByText(firstMovie.title)).toBeDefined();
   });
-
-  test.todo('navigates to the movie details page when clicking on a movie item', () => {
-    renderComponent();
-  });
 });

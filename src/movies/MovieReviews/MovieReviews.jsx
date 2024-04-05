@@ -8,7 +8,7 @@ export function MovieReviews({ reviews, movieId }) {
       : 'just now';
 
     return (
-      <li key={review.id} className="mb-3 w-9/12">
+      <li key={review.id} className="mb-3 w-9/12" data-testid="review-list-item">
         <h4>
           {review.author} <small>{dateString}</small>
         </h4>
