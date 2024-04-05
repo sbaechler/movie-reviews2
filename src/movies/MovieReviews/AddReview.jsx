@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import {useMutation, useQueryClient} from '@tanstack/react-query';
-import {submitMovieReview} from '../../api/movies';
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { submitMovieReview } from "../../api/movies";
 
 export function AddReview({ movieId, author }) {
-  const [content, setContent] = useState('');
+  const [content, setContent] = useState("");
   const queryClient = useQueryClient();
 
   const mutation = useMutation({
@@ -12,8 +12,7 @@ export function AddReview({ movieId, author }) {
         content,
         author,
       }),
-    onSuccess: (ctx) => {
-      console.log(ctx)
+    onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['movies', movieId] });
       setContent('');
     },
@@ -26,7 +25,6 @@ export function AddReview({ movieId, author }) {
 
   return (
     <div className="mt-3">
-
       {mutation.error && (
         <h5 onClick={() => mutation.reset()}>{String(mutation.error)}</h5>
       )}
@@ -36,7 +34,9 @@ export function AddReview({ movieId, author }) {
           Write a review
           <textarea
             className="block border-2 border-blue-900 w-9/12 h-36"
-            onChange={(e) => {setContent(e.target.value)}}
+            onChange={(e) => {
+              setContent(e.target.value);
+            }}
             value={content}
           />
         </label>
