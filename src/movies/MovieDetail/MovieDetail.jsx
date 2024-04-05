@@ -12,7 +12,10 @@ import {MovieReviews} from '../MovieReviews/MovieReviews';
 export function MovieDetail() {
   const {id} = useParams();
 
-  const { data: movie, isLoading, isError } = useQuery(['movies', id], () => getMovie(id))
+  const { data: movie, isLoading, isError } = useQuery({
+    queryKey: ['movies', id],
+    queryFn: () => getMovie(id),
+  })
 
   if(isLoading) {
     return (<div>Loading....</div>)
