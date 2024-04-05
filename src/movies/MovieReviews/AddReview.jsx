@@ -12,10 +12,7 @@ export function AddReview() {
             className="block border-2 border-blue-900 w-9/12 h-36"
           />
         </label>
-        <button
-          className="p-1 border-2 rounded-md border-blue-900"
-          type="submit"
-        >
+        <button className="p-1 border-2 rounded-md border-blue-900" type="submit">
           Submit
         </button>
       </form>

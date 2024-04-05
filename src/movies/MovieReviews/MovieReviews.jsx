@@ -1,13 +1,13 @@
 import React from 'react';
 
 export function MovieReviews({ reviews, movieId }) {
-  const reviewList = reviews.map(review => {
+  const reviewList = reviews.map((review) => {
     const dateString = review.updated_at
       ? new Date(review.updated_at).toLocaleDateString()
-      : "just now";
+      : 'just now';
 
     return (
-      <li key={review.id} className="mb-3 w-9/12">
+      <li key={review.id} className="mb-3 w-9/12" data-testid="review-list-item">
         <h4>
           {review.author} <small>{dateString}</small>
         </h4>

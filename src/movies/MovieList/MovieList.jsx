@@ -1,17 +1,20 @@
 import React from 'react';
-import {useQuery} from '@tanstack/react-query';
-import {MovieItem} from './MovieItem';
-import {getMovies} from '../../api/movies';
+import { useQuery } from '@tanstack/react-query';
+import { MovieItem } from './MovieItem';
+import { getMovies } from '../../api/movies';
 
 /**
  * This component shows a list of all movies. It is also
  * responsible for fetching the data from the API.
  */
 export function MovieList() {
-  const { data, isLoading } = useQuery(['movies'], getMovies)
+  const { data, isLoading } = useQuery({
+    queryKey: ['movies'],
+    queryFn: getMovies,
+  });
 
-  if(isLoading) {
-    return <div className="p-1">Loading...</div>
+  if (isLoading) {
+    return <div className="p-1">Loading...</div>;
   }
 
   return (
@@ -21,9 +24,9 @@ export function MovieList() {
       </header>
       <main>
         <div className="grid grid-flow-row auto-rows-auto grid-cols-4 gap-x-1	gap-y-1.5">
-        {data?.map(movie => (
-          <MovieItem key={movie.id} movie={movie} />
-        ))}
+          {data?.map((movie) => (
+            <MovieItem key={movie.id} movie={movie} />
+          ))}
         </div>
       </main>
     </div>
