@@ -29,9 +29,9 @@ export const handlers = [
       id: details[req.params.id].reviews.length + 1,
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
-    })
+    });
 
-    return res(ctx.json(details[req.params.id]))
+    return res(ctx.json(details[req.params.id]));
   }),
   rest.get('https://image.tmdb.org/*', (req) => req.passthrough()),
   rest.get('/src/*', (req) => req.passthrough()),

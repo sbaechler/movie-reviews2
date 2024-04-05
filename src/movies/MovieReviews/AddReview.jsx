@@ -6,29 +6,29 @@ export function AddReview({ movieId, author }) {
   const [content, setContent] = useState('');
   const queryClient = useQueryClient();
 
-  const mutation = useMutation(() => {
-    submitMovieReview({
-      movieId,
-      content,
-      author,
-    })
-  }, {
-    onSuccess: () => {
-      queryClient.invalidateQueries(['movies', movieId]);
+  const mutation = useMutation({
+    mutationFn: () => submitMovieReview({
+        movieId,
+        content,
+        author,
+      }),
+    onSuccess: (ctx) => {
+      console.log(ctx)
+      queryClient.invalidateQueries({ queryKey: ['movies', movieId] });
       setContent('');
-    }
-  })
+    },
+  });
 
   const onSubmit = (e) => {
     e.preventDefault()
-    mutation.mutate()
+    mutation.mutate();
   }
 
   return (
     <div className="mt-3">
 
       {mutation.error && (
-        <h5 onClick={() => mutation.reset()}>{mutation.error}</h5>
+        <h5 onClick={() => mutation.reset()}>{String(mutation.error)}</h5>
       )}
 
       <form onSubmit={onSubmit} noValidate>
