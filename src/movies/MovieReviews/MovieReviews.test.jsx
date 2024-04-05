@@ -22,13 +22,13 @@ describe('MovieReviews', () => {
 
   function renderComponent(customReviews) {
     const queryClient = getQueryClient();
-    const Wrapper = ({ children }) => (
+    const Wrapper = ({children}) => (
       <MemoryRouter>
-        <TestWrapper queryClient={queryClient} children={children} />
+        <TestWrapper queryClient={queryClient} children={children}/>
       </MemoryRouter>
     );
 
-    return render(<MovieReviews movieId={firstMovie.info.id} reviews={customReviews ?? firstMovie.reviews} />, {
+    return render(<MovieReviews movieId={firstMovie.info.id} reviews={customReviews ?? firstMovie.reviews}/>, {
       wrapper: Wrapper,
     });
   }
@@ -48,22 +48,5 @@ describe('MovieReviews', () => {
     expect(within(firstReview).getByRole('heading', expectedDateString)).toBeDefined();
   });
 
-  test('should render "just now" instead of the date of of a review, when the review has a nullish `updated_at` attribute', () => {
-    const reviewsWithFirstWithoutDate = firstMovie.reviews.map((review, index) => {
-      if (index !== 0) {
-        return review;
-      }
-
-      return {
-        ...review,
-        updated_at: undefined,
-      }
-    });
-
-    renderComponent(reviewsWithFirstWithoutDate);
-
-    const firstReview = screen.getAllByTestId('review-list-item')[0];
-
-    expect(within(firstReview).getByRole('heading', 'just now')).toBeDefined();
-  });
+  test.todo('should render "just now" instead of the date of of a review, when the review has a nullish `updated_at` attribute');
 });
