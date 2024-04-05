@@ -1,9 +1,9 @@
-import React from "react";
-import { useParams, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
-import { getMovie } from "../../api/movies";
-import { IMAGE_BASE_URL } from "../../constants";
-import { MovieReviews } from "../MovieReviews/MovieReviews";
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
+import { getMovie } from '../../api/movies';
+import { IMAGE_BASE_URL } from '../../constants';
+import { MovieReviews } from '../MovieReviews/MovieReviews';
 
 /**
  * The detail view for a single movie.
@@ -12,10 +12,14 @@ import { MovieReviews } from "../MovieReviews/MovieReviews";
 export function MovieDetail() {
   const { id } = useParams();
 
-  const { data: movie, isLoading, isError } = useQuery({
+  const {
+    data: movie,
+    isLoading,
+    isError,
+  } = useQuery({
     queryKey: ['movies', id],
     queryFn: () => getMovie(id),
-  })
+  });
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -67,10 +71,7 @@ export function MovieDetail() {
         <h2 className="text-2xl mb-3 text-blueGray-800">Images</h2>
         <ul className="flex flex-wrap -mx-4 -mb-8" data-testid="images-list">
           {images.map((img) => (
-            <li
-              className="w-1/3 sm:w-1/4 md:w-1/6 xl:w-1/12 px-4 mb-8"
-              key={img.file_path}
-            >
+            <li className="w-1/3 sm:w-1/4 md:w-1/6 xl:w-1/12 px-4 mb-8" key={img.file_path}>
               <img
                 className="rounded shadow-md"
                 height={img.height}

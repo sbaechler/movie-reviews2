@@ -1,7 +1,7 @@
-import React from "react";
-import { useQuery } from "@tanstack/react-query";
-import { MovieItem } from "./MovieItem";
-import { getMovies } from "../../api/movies";
+import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { MovieItem } from './MovieItem';
+import { getMovies } from '../../api/movies';
 
 /**
  * This component shows a list of all movies. It is also
@@ -11,7 +11,7 @@ export function MovieList() {
   const { data, isLoading } = useQuery({
     queryKey: ['movies'],
     queryFn: getMovies,
-  })
+  });
 
   if (isLoading) {
     return <div className="p-1">Loading...</div>;

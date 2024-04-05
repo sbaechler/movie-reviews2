@@ -1,35 +1,43 @@
-import { render, screen } from "@testing-library/react";
-import React from "react";
-import { MemoryRouter } from "react-router-dom";
-import { describe, expect, test } from "vitest";
-import { TestWrapper } from "../../test-utils/TestWrapper";
-import { MovieItem } from "./MovieItem";
+import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
+import { describe, expect, test } from 'vitest';
+import { getMovies } from '../../api/movies';
+import { setupMockServer } from '../../test-utils/msw';
+import { handlers } from '../mocks/handlers';
+import { getQueryClient } from '../../test-utils/react-query';
+import { TestWrapper } from '../../test-utils/TestWrapper';
+import { MovieItem } from './MovieItem';
 
-const mockMovie = {
-  id: "mock-id",
-  title: "mock-title",
-  poster_path: "mock-poster_path",
-};
+describe('MovieItem', () => {
+  setupMockServer(...handlers);
 
-describe("MovieItem", () => {
+  let firstMovie;
+  beforeAll(async () => {
+    const moviesResponse = await getMovies();
+
+    firstMovie = moviesResponse[0];
+  });
+
   function renderComponent() {
+    const queryClient = getQueryClient();
+
     const Wrapper = ({ children }) => (
       <MemoryRouter>
-        <TestWrapper children={children} />
+        <TestWrapper queryClient={queryClient} children={children} />
       </MemoryRouter>
     );
 
-    return render(<MovieItem movie={mockMovie} />, { wrapper: Wrapper });
+    return render(<MovieItem movie={firstMovie} />, { wrapper: Wrapper });
   }
 
-  test("can render the component", async () => {
+  test('can render the component', async () => {
     renderComponent();
 
-    expect(screen.getByText("mock-title")).toBeDefined();
+    expect(screen.getByText(firstMovie.title)).toBeDefined();
   });
 
-  test.todo(
-    "navigates to the movie details page when clicking on a movie item",
-    () => {}
-  );
+  test.todo('navigates to the movie details page when clicking on a movie item', () => {
+    renderComponent();
+  });
 });

@@ -1,13 +1,14 @@
-import React, { useState } from "react";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { submitMovieReview } from "../../api/movies";
+import React, { useState } from 'react';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { submitMovieReview } from '../../api/movies';
 
 export function AddReview({ movieId, author }) {
-  const [content, setContent] = useState("");
+  const [content, setContent] = useState('');
   const queryClient = useQueryClient();
 
   const mutation = useMutation({
-    mutationFn: () => submitMovieReview({
+    mutationFn: () =>
+      submitMovieReview({
         movieId,
         content,
         author,
@@ -19,15 +20,13 @@ export function AddReview({ movieId, author }) {
   });
 
   const onSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     mutation.mutate();
-  }
+  };
 
   return (
     <div className="mt-3">
-      {mutation.error && (
-        <h5 onClick={() => mutation.reset()}>{String(mutation.error)}</h5>
-      )}
+      {mutation.error && <h5 onClick={() => mutation.reset()}>{String(mutation.error)}</h5>}
 
       <form onSubmit={onSubmit} noValidate>
         <label className="block text-2xl mb-3 text-blueGray-800">
@@ -40,10 +39,7 @@ export function AddReview({ movieId, author }) {
             value={content}
           />
         </label>
-        <button
-          className="p-1 border-2 rounded-md border-blue-900"
-          type="submit"
-        >
+        <button className="p-1 border-2 rounded-md border-blue-900" type="submit">
           Submit
         </button>
       </form>

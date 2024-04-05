@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { IMAGE_BASE_URL } from "../../constants";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { IMAGE_BASE_URL } from '../../constants';
 
 /**
  * A single item of the movie list.
