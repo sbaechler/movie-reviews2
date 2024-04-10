@@ -7,12 +7,7 @@ export function AddReview({ movieId, author }) {
   const queryClient = useQueryClient();
 
   const mutation = useMutation({
-    mutationFn: () =>
-      submitMovieReview({
-        movieId,
-        content,
-        author,
-      }),
+    mutationFn: submitMovieReview,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['movies', movieId] });
       setContent('');
@@ -21,7 +16,11 @@ export function AddReview({ movieId, author }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    mutation.mutate();
+    mutation.mutate({
+      movieId,
+      content,
+      author,
+    });
   };
 
   return (
