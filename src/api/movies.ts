@@ -12,6 +12,7 @@ export async function getMovies() {
  * @param id - The ID of the movie.
  */
 export async function getMovie(id: string) {
+  await new Promise((resolve) => setTimeout(resolve, 800));
   return ky.get(`${window.location.origin}/movies/${id}`).json();
 }
 
