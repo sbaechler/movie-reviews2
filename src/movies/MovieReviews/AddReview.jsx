@@ -2,10 +2,17 @@ import React from "react";
 
 export function AddReview() {
 
+  // TODO: Implement the mutation
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    // TODO: Trigger the mutation
+  };
+
   return (
     <div className="mt-3">
 
-      <form noValidate>
+      <form noValidate onSubmit={onSubmit}>
         <label className="block text-2xl mb-3 text-blueGray-800">
           Write a review
           <textarea
