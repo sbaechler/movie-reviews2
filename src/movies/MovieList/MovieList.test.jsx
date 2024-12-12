@@ -1,8 +1,10 @@
+// @vitest-environment jsdom
+
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test, beforeAll } from 'vitest';
 import { getMovies } from '../../api/movies';
 import { TestWrapper } from '../../test-utils/TestWrapper';
 import { setupMockServer } from '../../test-utils/msw';

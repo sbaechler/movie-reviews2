@@ -1,7 +1,9 @@
+// @vitest-environment jsdom
+
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test, beforeAll } from 'vitest';
 import { getMovies } from '../../api/movies';
 import { setupMockServer } from '../../test-utils/msw';
 import { handlers } from '../mocks/handlers';
