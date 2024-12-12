@@ -19,8 +19,8 @@ export const handlers = [
 
     return HttpResponse.json(details[params.id])
   }),
-  http.post('/reviews/:id', async ({req, params}) => {
-    const review = await req.json();
+  http.post('/reviews/:id', async ({request, params}) => {
+    const review = await request.json();
 
     details[params.id].reviews?.unshift({
       ...review,

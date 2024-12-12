@@ -12,7 +12,7 @@ export async function getMovies() {
  * @param id - The ID of the movie.
  */
 export async function getMovie(id: string) {
-  await new Promise((resolve) => setTimeout(resolve, 800));
+  await new Promise((resolve) => setTimeout(resolve, 600));
   return ky.get(`${window.location.origin}/movies/${id}`).json();
 }
 
@@ -29,5 +29,8 @@ type MoviePayload = {
 export async function submitMovieReview(payload: MoviePayload) {
   return ky.post(`${window.location.origin}/reviews/${payload.movieId}`, {
     body: JSON.stringify(payload),
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
 }
