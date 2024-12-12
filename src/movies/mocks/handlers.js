@@ -1,38 +1,36 @@
-import {rest} from 'msw'
+import {http, passthrough, HttpResponse} from 'msw'
 
 const details = {}
 
 export const handlers = [
-  rest.get('/movies', async (req, res, ctx) => {
+  http.get('/movies', async () => {
     const data = await import('./data/movies/GET.json')
 
-    return res(
-      ctx.json(data.results),
-    )
+    return HttpResponse.json(data.results)
   }),
-  rest.get('/movies/:id', async (req, res, ctx) => {
-    if (!details[req.params.id]) {
-      const data = await import(`./data/movies/${req.params.id}/GET.json`);
-      details[req.params.id] = {
+  http.get('/movies/:id', async ({ params}) => {
+    if (!details[params.id]) {
+      const data = await import(`./data/movies/${params.id}/GET.json`);
+      details[params.id] = {
         ...data,
         images: data.images.slice(0, 8),
       }
     }
 
-    return res(ctx.json(details[req.params.id]))
+    return HttpResponse.json(details[params.id])
   }),
-  rest.post('/reviews/:id', async (req, res, ctx) => {
+  http.post('/reviews/:id', async ({req, params}) => {
     const review = await req.json();
 
-    details[req.params.id].reviews?.unshift({
+    details[params.id].reviews?.unshift({
       ...review,
-      id: details[req.params.id].reviews.length + 1,
+      id: details[params.id].reviews.length + 1,
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
-    });
+    })
 
-    return res(ctx.json(details[req.params.id]));
+    return HttpResponse.json(details[params.id])
   }),
-  rest.get('https://image.tmdb.org/*', (req) => req.passthrough()),
-  rest.get('/src/*', (req) => req.passthrough()),
+  http.get('https://image.tmdb.org/*', (() => passthrough())),
+  http.get('/src/*', () => passthrough()),
 ]
