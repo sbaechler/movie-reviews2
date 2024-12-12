@@ -10,4 +10,16 @@ You can use Javascript (jsx) or Typescript (tsx).
 
 Install the tailwind plugin in your IDE.
 
+## Installation
+
+Make sure you have a recent version of [Node.js](https://nodejs.org/) installed.
+
+Install the dependencies with `yarn`.
+
+    corepack enable
+    yarn
+
+
+## Running the app
+
 To start the app type `yarn dev`.
