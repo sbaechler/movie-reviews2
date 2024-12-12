@@ -17,6 +17,7 @@ export function App() {
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
       <ReactQueryDevtools initialIsOpen={false} />
+      <TmdbAttribution />
     </QueryClientProvider>
   );
 }
