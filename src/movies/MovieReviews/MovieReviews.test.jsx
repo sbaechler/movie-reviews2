@@ -28,9 +28,12 @@ describe('MovieReviews', () => {
       </MemoryRouter>
     );
 
-    return render(<MovieReviews movieId={firstMovie.info.id} reviews={customReviews ?? firstMovie.reviews} />, {
-      wrapper: Wrapper,
-    });
+    return render(
+      <MovieReviews movieId={firstMovie.info.id} reviews={customReviews ?? firstMovie.reviews} />,
+      {
+        wrapper: Wrapper,
+      },
+    );
   }
 
   test('can render the component', () => {
@@ -57,13 +60,13 @@ describe('MovieReviews', () => {
       return {
         ...review,
         updated_at: undefined,
-      }
+      };
     });
 
     renderComponent(reviewsWithFirstWithoutDate);
 
     const firstReview = screen.getAllByTestId('review-list-item')[0];
 
-    expect(within(firstReview).getByRole('heading', 'just now')).toBeDefined();
+    expect(within(firstReview).getByRole('heading', { name: /just now/i })).toBeDefined();
   });
 });
